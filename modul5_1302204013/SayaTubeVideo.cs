@@ -11,13 +11,8 @@ namespace modul5_1302204013
         {
             Random random = new Random();
             this.id = random.Next(10000, 99999);
-            if (title == "")
-                throw new NullReferenceException("Title harus terisi");
-            if (title.Length > 200)
-                throw new Exception("Title maksimal 200 karakter");
 
             this.title = title;
-
 
             this.playCount = 0;
         }

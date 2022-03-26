@@ -13,10 +13,6 @@ namespace modul5_1302204013
             Random random = new Random();
             this.id = random.Next(10000, 99999);
             this.uploadedVideos = new List<SayaTubeVideo>();
-            if (username == "")
-                throw new NullReferenceException("Username harus terisi");
-            if (username.Length > 100)
-                throw new Exception("Username maksimal 100 karakter");
             this.Username = username;
         }
 
